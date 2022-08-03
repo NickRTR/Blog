@@ -26,16 +26,15 @@
 	.post {
 		background-color: var(--background);
 		border-radius: 1rem;
-		padding: 0.25rem;
-		height: calc(100% - 2 * 0.25rem);
+		padding: 0.5rem 0.5rem;
+		height: calc(100% - 2 * 0.5rem);
 	}
 
 	h1 {
-		padding-block: 0.5rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.description {
 		color: var(--grey);
-		padding-bottom: 0.25rem;
 	}
 </style>
