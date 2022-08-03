@@ -13,8 +13,7 @@
 
 <style>
 	section {
-		background-color: #ffe53b;
-		background-image: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
+		background-image: var(--gradient);
 		padding: 0.25rem;
 		border-radius: 1rem;
 	}

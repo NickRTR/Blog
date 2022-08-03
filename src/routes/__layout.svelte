@@ -5,6 +5,7 @@
 <style>
 	body {
 		max-width: 700px;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	}
 
 	:global(body) {
@@ -18,6 +19,7 @@
 		--accent: #ffc600;
 		--background: black;
 		--color: white;
-		--grey: grey;
+		--grey: lightgrey;
+		--gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
 	}
 </style>
