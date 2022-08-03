@@ -1,24 +1,23 @@
 <script>
-	export let posts;
+	import PostCard from "$lib/components/PostCard.svelte";
 
-	console.log(posts);
+	export let posts;
 </script>
 
 <body>
 	<h1>Nick Reutlinger - Blog</h1>
 
-	<article>
+	<article class="posts">
 		{#each posts as post}
-			<div class="post">
-				<h1>{post.title}</h1>
-				<p>{post.shortDescription}</p>
-			</div>
+			<PostCard {post} />
 		{/each}
 	</article>
 </body>
 
 <style>
-	body {
-		text-align: center;
+	.posts {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1rem;
 	}
 </style>

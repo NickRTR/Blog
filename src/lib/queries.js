@@ -1,9 +1,10 @@
-import { gql } from 'graphql-request';
+import { gql } from "graphql-request";
 
 export const postsQuery = gql`
 	query posts {
 		posts {
 			title
+			description
 			createdAt
 			slug
 		}
