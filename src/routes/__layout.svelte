@@ -23,6 +23,11 @@
 		--gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
 	}
 
+	:global(*::selection) {
+		background-color: greenyellow;
+		color: black;
+	}
+
 	:global(a) {
 		color: unset;
 		text-decoration: none;
