@@ -3,12 +3,14 @@
 </script>
 
 <section>
-	<div class="post">
-		<h1>{post.title}</h1>
-		{#if post.description}
-			<p class="description">{post.description}</p>
-		{/if}
-	</div>
+	<a href="/{post.slug}">
+		<div class="post">
+			<h1>{post.title}</h1>
+			{#if post.description}
+				<p class="description">{post.description}</p>
+			{/if}
+		</div>
+	</a>
 </section>
 
 <style>

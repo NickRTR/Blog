@@ -22,4 +22,9 @@
 		--grey: lightgrey;
 		--gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
 	}
+
+	:global(a) {
+		color: unset;
+		text-decoration: none;
+	}
 </style>
