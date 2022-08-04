@@ -20,4 +20,16 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1rem;
 	}
+
+	@media only screen and (max-width: 600px) {
+		.posts {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.posts {
+			grid-template-columns: 1fr;
+		}
+	}
 </style>
