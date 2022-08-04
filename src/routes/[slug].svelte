@@ -173,18 +173,6 @@
 		resize: none;
 	}
 
-	button {
-		background-color: var(--yellow);
-		color: var(--textDark);
-		border-radius: 1rem;
-		padding: 0.25rem 0.5rem;
-		font-size: 1.2rem;
-		font-weight: bold;
-		user-select: none;
-		margin-top: 0.5rem;
-		cursor: pointer;
-	}
-
 	@media only screen and (max-width: 900px) {
 		input,
 		textarea {

@@ -48,7 +48,31 @@
 		color: var(--contrast);
 	}
 
-	:global(img, iframe) {
+	:global(img, iframe, button) {
 		user-select: none;
+	}
+
+	:global(textarea, input) {
+		background-color: var(--background);
+		border: 2px solid var(--color);
+		border-radius: 0.5rem;
+	}
+
+	:global(textarea:hover, input:hover) {
+		border-color: var(--accent);
+	}
+
+	:global(button) {
+		background-color: var(--background);
+		color: var(--accent);
+		border-radius: 1rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-block: 1rem;
+		cursor: pointer;
+	}
+
+	:global(button:hover) {
+		text-decoration: underline;
 	}
 </style>
