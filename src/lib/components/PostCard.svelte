@@ -18,17 +18,40 @@
 		background-image: var(--gradient);
 		padding: 0.25rem;
 		border-radius: 1rem;
+		transition: padding 0.2s ease-in-out;
+	}
+
+	section:hover {
+		padding: 0.5rem;
+	}
+
+	section:hover .post {
+		padding: 0.5rem;
+		height: calc(100% - 2 * 0.5rem);
+	}
+
+	section:hover .post h1 {
+		text-decoration: underline;
 	}
 
 	section * {
 		margin: 0;
 	}
 
+	a {
+		outline: none;
+	}
+
+	a:focus h1 {
+		text-decoration: underline;
+	}
+
 	.post {
+		transition: all 0.2s ease-in-out;
 		background-color: var(--background);
-		border-radius: 1rem;
-		padding: 0.5rem 0.5rem;
-		height: calc(100% - 2 * 0.5rem);
+		border-radius: 0.8rem;
+		padding: 0.75rem;
+		height: calc(100% - 2 * 0.75rem);
 	}
 
 	h1 {
