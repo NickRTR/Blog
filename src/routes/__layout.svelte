@@ -1,5 +1,12 @@
+<script>
+	import Nav from "../lib/components/Nav.svelte";
+	import Footer from "../lib/components/Footer.svelte";
+</script>
+
 <body>
+	<Nav />
 	<slot />
+	<Footer />
 </body>
 
 <style>
@@ -10,7 +17,6 @@
 	}
 
 	:global(body) {
-		margin: 0;
 		background-color: var(--background);
 		color: var(--color);
 		margin: auto;
