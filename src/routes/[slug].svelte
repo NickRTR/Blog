@@ -184,16 +184,19 @@
 		}
 	}
 
-	:global(.post article h1) {
-		border-bottom: 5px solid var(--blue);
+	:global(.post article h1:hover) {
+		color: var(--accent);
+		text-decoration: underline;
 	}
 
-	:global(.post article h2) {
-		border-bottom: 4px solid var(--blue);
+	:global(.post article h2:hover) {
+		color: var(--accent);
+		text-decoration: underline;
 	}
 
-	:global(.post article h3) {
-		border-bottom: 3px solid var(--blue);
+	:global(.post article h3:hover) {
+		color: var(--accent);
+		text-decoration: underline;
 	}
 
 	:global(.post a) {
