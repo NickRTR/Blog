@@ -112,6 +112,7 @@
 		height: 5px;
 		border: none;
 		background: var(--gradient);
+		border-radius: 0.1rem;
 	}
 
 	header p {

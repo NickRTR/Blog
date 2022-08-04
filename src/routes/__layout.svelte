@@ -17,10 +17,16 @@
 
 	:global(:root) {
 		--accent: #ffc600;
-		--background: black;
-		--color: white;
+		--background: #04151f;
+		--color: #e5dada;
+		--contrast: white;
 		--grey: lightgrey;
 		--gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
+	}
+
+	:global(*:focus) {
+		outline: 2px solid var(--contrast);
+		border-radius: 0.1rem;
 	}
 
 	:global(*::selection) {
@@ -29,7 +35,15 @@
 	}
 
 	:global(a) {
-		color: unset;
+		color: var(--accent);
 		text-decoration: none;
+	}
+
+	:global(a:hover) {
+		text-decoration: underline;
+	}
+
+	:global(h1) {
+		color: var(--contrast);
 	}
 </style>
