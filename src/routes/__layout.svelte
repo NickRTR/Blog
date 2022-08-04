@@ -6,6 +6,7 @@
 	body {
 		max-width: 700px;
 		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		padding-inline: 0.5rem;
 	}
 
 	:global(body) {
@@ -30,8 +31,8 @@
 	}
 
 	:global(*::selection) {
-		background-color: greenyellow;
-		color: black;
+		background: var(--accent);
+		color: var(--background);
 	}
 
 	:global(a) {
@@ -45,5 +46,9 @@
 
 	:global(h1) {
 		color: var(--contrast);
+	}
+
+	:global(img, iframe) {
+		user-select: none;
 	}
 </style>

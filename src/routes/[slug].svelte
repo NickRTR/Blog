@@ -86,7 +86,7 @@
 				<button class="border" type="submit" on:click|preventDefault={postComment}>Comment</button>
 				<button class="border" type="button"
 					><a
-						href="/blog"
+						href="/"
 						rel="canonical"
 						class="noYellowUnderline"
 						sveltekit:prefetch
