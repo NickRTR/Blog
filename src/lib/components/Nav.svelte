@@ -1,6 +1,6 @@
 <nav>
 	<section>
-		<a href="/" title="Home">Home</a>
+		<a href="/" title="Home" sveltekit:prefetch>Home</a>
 	</section>
 	<a href="https://github.com/NickRTR/blog" title="GitHub">
 		<img src="/GitHub-light.png" alt="GitHub" />
