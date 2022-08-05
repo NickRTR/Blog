@@ -1,11 +1,14 @@
 <script>
 	import PostCard from "$lib/components/PostCard.svelte";
+	import About from "../lib/components/About.svelte";
 
 	export let posts;
 </script>
 
 <body>
 	<h1>Nick Reutlinger - Blog</h1>
+
+	<About />
 
 	<article class="posts">
 		{#each posts as post}
