@@ -124,14 +124,14 @@
 		margin-bottom: 3rem;
 	}
 
+	footer hr {
+		margin-top: 3rem;
+	}
+
 	header .info {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-	}
-
-	footer hr {
-		margin-top: 3rem;
 	}
 
 	.comment {

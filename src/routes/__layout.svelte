@@ -27,7 +27,7 @@
 		--background: #04151f;
 		--color: #e5dada;
 		--contrast: white;
-		--grey: lightgrey;
+		--grey: grey;
 		--gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
 	}
 
