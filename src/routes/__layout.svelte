@@ -28,7 +28,8 @@
 		--color: #e5dada;
 		--contrast: white;
 		--grey: grey;
-		--gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
+		/* --gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%); */
+		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
 	}
 
 	:global(*:focus) {
