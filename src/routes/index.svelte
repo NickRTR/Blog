@@ -1,8 +1,10 @@
 <script>
-	import PostCard from "$lib/components/PostCard.svelte";
 	import About from "../lib/components/About.svelte";
+	import AllPosts from "../lib/components/AllPosts.svelte";
+	import Categories from "../lib/components/Categories.svelte";
 
 	export let posts;
+	export let categories;
 </script>
 
 <body>
@@ -10,29 +12,7 @@
 
 	<About />
 
-	<article class="posts">
-		{#each posts as post}
-			<PostCard {post} />
-		{/each}
-	</article>
+	<AllPosts {posts} {categories} />
+
+	<!-- <Categories {posts} {categories} /> -->
 </body>
-
-<style>
-	.posts {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: 1rem;
-	}
-
-	@media only screen and (max-width: 600px) {
-		.posts {
-			grid-template-columns: 1fr 1fr;
-		}
-	}
-
-	@media only screen and (max-width: 400px) {
-		.posts {
-			grid-template-columns: 1fr;
-		}
-	}
-</style>

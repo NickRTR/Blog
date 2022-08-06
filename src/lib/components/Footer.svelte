@@ -2,8 +2,9 @@
 	<hr />
 	<nav>
 		<a href="/" title="Home" sveltekit:prefetch>Home</a>
-		<a href="https://www.nickreutlinger.de" title="Portfolio" sveltekit:prefetch>Portfolio</a>
-		<a href="https://www.nickreutlinger.de/contact" title="Contact" sveltekit:prefetch>Contact</a>
+		<a href="/categories" title="Categories" sveltekit:prefetch>Categories</a>
+		<a href="https://www.nickreutlinger.de" title="Portfolio">Portfolio</a>
+		<a href="https://www.nickreutlinger.de/contact" title="Contact">Contact</a>
 	</nav>
 	<p>Nick Reutlinger</p>
 </footer>

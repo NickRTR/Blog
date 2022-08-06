@@ -1,6 +1,7 @@
 <nav>
 	<section>
 		<a href="/" title="Home" sveltekit:prefetch>Home</a>
+		<a href="/categories" title="Categories" sveltekit:prefetch>Categories</a>
 	</section>
 	<a href="https://github.com/NickRTR/blog" title="GitHub">
 		<img src="/GitHub-light.png" alt="GitHub" />
@@ -17,6 +18,10 @@
 	a {
 		font-weight: bold;
 		font-size: 1.2rem;
+	}
+
+	section a {
+		margin-right: 0.5rem;
 	}
 
 	img {

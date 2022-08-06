@@ -6,6 +6,7 @@ export const postsQuery = gql`
 			title
 			description
 			createdAt
+			categories
 			slug
 		}
 	}
@@ -40,6 +41,16 @@ export const commentQuery = gql`
 			where: { id: $id }
 		) {
 			id
+		}
+	}
+`;
+
+export const blogCategoriesQuery = gql`
+	query blogCategories {
+		__type(name: "Categories") {
+			enumValues {
+				name
+			}
 		}
 	}
 `;
