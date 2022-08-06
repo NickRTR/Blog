@@ -12,6 +12,15 @@ export const postsQuery = gql`
 	}
 `;
 
+export const searchQuery = gql`
+	query search {
+		posts {
+			title
+			slug
+		}
+	}
+`;
+
 export const postQuery = gql`
 	query post($slug: String!) {
 		post(where: { slug: $slug }) {

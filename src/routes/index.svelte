@@ -5,8 +5,7 @@
 
 		return {
 			props: {
-				posts: data.posts,
-				categories: data.categories
+				posts: data.posts
 			}
 		};
 	}

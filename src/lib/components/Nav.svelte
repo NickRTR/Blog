@@ -1,11 +1,17 @@
 <script>
-	import { search } from "$lib/stores";
+	import Search from "./Search.svelte";
 
-	let searchInput;
+	let searchElement;
+	let search = "";
+
+	$: {
+		// restrict search to letters and numbers
+		search = search.replace(/[^a-z0-9]/gi, "");
+	}
 
 	function focusSearch(event) {
 		if (event.key === "/") {
-			searchInput.focus();
+			searchElement.focus();
 		}
 	}
 </script>
@@ -21,14 +27,17 @@
 		<div class="search">
 			<input
 				type="text"
-				placeholder="type / to search"
-				bind:this={searchInput}
-				bind:value={$search}
+				placeholder="type / to search posts"
+				bind:this={searchElement}
+				bind:value={search}
 			/>
 		</div>
 		<a href="https://github.com/NickRTR/blog" title="GitHub">
 			<img src="/GitHub-light.png" alt="GitHub" />
 		</a>
+		{#if search !== ""}
+			<Search bind:search />
+		{/if}
 	</aside>
 </nav>
 
@@ -59,6 +68,7 @@
 	input {
 		margin-right: 0.5rem;
 		padding: 0.25rem;
+		width: 150px;
 	}
 
 	img {
