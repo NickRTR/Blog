@@ -1,7 +1,7 @@
 import hygraph from "$lib/hygraph";
 import { commentQuery } from "$lib/queries";
 
-export async function post({ request }) {
+export async function POST({ request }) {
 	const { commentAuthor, commentBody, id } = await request.json();
 	try {
 		if (commentAuthor.length === 0 || commentBody.length === 0)

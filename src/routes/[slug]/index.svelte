@@ -10,7 +10,7 @@
 	let commentSubmitMessage = "";
 
 	async function postComment() {
-		const res = await fetch("/api/blog/postComment", {
+		const res = await fetch("/api/postComment", {
 			method: "POST",
 			body: JSON.stringify({
 				commentAuthor,

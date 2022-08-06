@@ -1,10 +1,22 @@
+<script context="module">
+	export async function load({ fetch }) {
+		const res = await fetch("/api/posts");
+		const data = await res.json();
+
+		return {
+			props: {
+				posts: data.posts,
+				categories: data.categories
+			}
+		};
+	}
+</script>
+
 <script>
 	import About from "../lib/components/About.svelte";
 	import AllPosts from "../lib/components/AllPosts.svelte";
-	import Categories from "../lib/components/Categories.svelte";
 
 	export let posts;
-	export let categories;
 </script>
 
 <body>
@@ -12,7 +24,5 @@
 
 	<About />
 
-	<AllPosts {posts} {categories} />
-
-	<!-- <Categories {posts} {categories} /> -->
+	<AllPosts {posts} />
 </body>
