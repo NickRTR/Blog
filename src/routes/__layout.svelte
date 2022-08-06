@@ -61,6 +61,7 @@
 
 	:global(textarea, input) {
 		background-color: var(--background);
+		color: var(--color);
 		border: 2px solid var(--color);
 		border-radius: 0.5rem;
 	}
