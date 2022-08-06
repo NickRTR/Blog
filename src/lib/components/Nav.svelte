@@ -31,13 +31,13 @@
 				bind:this={searchElement}
 				bind:value={search}
 			/>
+			{#if search !== ""}
+				<Search bind:search />
+			{/if}
 		</div>
 		<a href="https://github.com/NickRTR/blog" title="GitHub">
 			<img src="/GitHub-light.png" alt="GitHub" />
 		</a>
-		{#if search !== ""}
-			<Search bind:search />
-		{/if}
 	</aside>
 </nav>
 
