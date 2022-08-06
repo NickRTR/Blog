@@ -10,7 +10,9 @@
 		<h2># {category}</h2>
 		{#each posts as post}
 			{#if post.categories.includes(category)}
-				<PostCard {post} />
+				<div class="post">
+					<PostCard {post} />
+				</div>
 			{/if}
 		{/each}
 	{/each}
@@ -19,5 +21,9 @@
 <style>
 	h2:hover {
 		color: var(--accent);
+	}
+
+	.post {
+		margin-bottom: 0.8rem;
 	}
 </style>
