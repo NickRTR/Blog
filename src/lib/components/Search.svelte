@@ -35,7 +35,7 @@
 		border-radius: 0.5rem;
 		position: absolute;
 		top: 4rem;
-		width: 165px;
+		width: 134px;
 		padding: 1rem;
 	}
 
