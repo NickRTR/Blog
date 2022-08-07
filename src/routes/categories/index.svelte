@@ -16,7 +16,7 @@
 </script>
 
 <script>
-	import Categories from "$lib/components/Categories.svelte";
+	import PostsGrid from "$lib/components/PostsGrid.svelte";
 
 	export let posts;
 	export let categories;
@@ -25,5 +25,18 @@
 <body>
 	<h1>Categories</h1>
 
-	<Categories {posts} {categories} />
+	{#each categories as { name: category }}
+		<h2># {category}</h2>
+		<PostsGrid
+			posts={posts.filter((post) => {
+				return post.categories.includes(category);
+			})}
+		/>
+	{/each}
 </body>
+
+<style>
+	h2:hover {
+		color: var(--yellow);
+	}
+</style>

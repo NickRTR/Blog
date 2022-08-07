@@ -13,7 +13,7 @@
 
 <script>
 	import About from "../lib/components/About.svelte";
-	import AllPosts from "../lib/components/AllPosts.svelte";
+	import PostsGrid from "../lib/components/PostsGrid.svelte";
 
 	export let posts;
 </script>
@@ -23,7 +23,7 @@
 
 	<About />
 
-	<AllPosts {posts} />
+	<PostsGrid {posts} />
 </body>
 
 <style>
