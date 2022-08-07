@@ -6,7 +6,7 @@
 		<a href="https://www.nickreutlinger.de" title="Portfolio">Portfolio</a>
 		<a href="https://www.nickreutlinger.de/contact" title="Contact">Contact</a>
 	</nav>
-	<p>Nick Reutlinger</p>
+	<p>Nick Reutlinger 🚀</p>
 </footer>
 
 <style>

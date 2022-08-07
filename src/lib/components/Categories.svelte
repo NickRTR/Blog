@@ -20,7 +20,7 @@
 
 <style>
 	h2:hover {
-		color: var(--accent);
+		color: var(--yellow);
 	}
 
 	.post {

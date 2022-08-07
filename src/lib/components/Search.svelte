@@ -30,7 +30,7 @@
 
 <style>
 	section {
-		border: 4px solid var(--accent);
+		border: 4px solid var(--yellow);
 		background-color: var(--background);
 		border-radius: 0.5rem;
 		position: absolute;
@@ -47,7 +47,7 @@
 	}
 
 	a:hover {
-		color: var(--accent);
+		color: var(--yellow);
 	}
 
 	p {

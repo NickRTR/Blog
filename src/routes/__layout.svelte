@@ -25,12 +25,11 @@
 	}
 
 	:global(:root) {
-		--accent: #ffc600;
 		--background: #04151f;
-		--color: #e5dada;
+		--color: #c8c8c8;
 		--contrast: white;
 		--grey: grey;
-		/* --gradient: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%); */
+		--yellow: #ffc600;
 		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
 	}
 
@@ -40,20 +39,21 @@
 	}
 
 	:global(*::selection) {
-		background: var(--accent);
+		background: var(--yellow);
 		color: var(--background);
 	}
 
 	:global(a) {
-		color: var(--accent);
+		color: var(--contrast);
 		text-decoration: none;
 	}
 
 	:global(a:hover) {
 		text-decoration: underline;
+		color: var(--yellow);
 	}
 
-	:global(h1) {
+	:global(h1, h2, h3) {
 		color: var(--contrast);
 	}
 
@@ -69,12 +69,12 @@
 	}
 
 	:global(textarea:hover, input:hover) {
-		border-color: var(--accent);
+		border-color: var(--yellow);
 	}
 
 	:global(button) {
 		background-color: var(--background);
-		color: var(--accent);
+		color: var(--yellow);
 		border-radius: 1rem;
 		font-size: 1.2rem;
 		font-weight: bold;

@@ -19,9 +19,15 @@
 </script>
 
 <body>
-	<h1>Nick Reutlinger - Blog</h1>
+	<h1>Nick Reutlinger - <span>Blog</span></h1>
 
 	<About />
 
 	<AllPosts {posts} />
 </body>
+
+<style>
+	span {
+		color: var(--yellow);
+	}
+</style>

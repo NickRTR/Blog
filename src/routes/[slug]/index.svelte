@@ -185,17 +185,17 @@
 	}
 
 	:global(.post article h1:hover) {
-		color: var(--accent);
+		color: var(--yellow);
 		text-decoration: underline;
 	}
 
 	:global(.post article h2:hover) {
-		color: var(--accent);
+		color: var(--yellow);
 		text-decoration: underline;
 	}
 
 	:global(.post article h3:hover) {
-		color: var(--accent);
+		color: var(--yellow);
 		text-decoration: underline;
 	}
 
