@@ -68,7 +68,7 @@
 	input {
 		margin-right: 0.5rem;
 		padding: 0.25rem;
-		width: 119px;
+		width: 126px;
 	}
 
 	img {
