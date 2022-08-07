@@ -18,7 +18,7 @@
 
 	:global(body) {
 		/* remove borders at top and bottom of mobile screens */
-		border: 2px solid transparent;
+		border: 0.1px solid transparent;
 		background-color: var(--background);
 		color: var(--color);
 		margin: auto;
