@@ -13,6 +13,11 @@
 		if (event.key === "/") {
 			searchElement.focus();
 		}
+
+		if (event.key === "Escape") {
+			searchElement.blur();
+			search = "";
+		}
 	}
 </script>
 
