@@ -18,6 +18,10 @@
 	export let posts;
 </script>
 
+<svelte:head>
+	<title>Nick Reutlinger - Blog</title>
+</svelte:head>
+
 <body>
 	<h1>Nick Reutlinger - <span>Blog</span></h1>
 

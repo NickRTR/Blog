@@ -35,7 +35,7 @@
 </script>
 
 <svelte:head>
-	<title>Nick Reutlinger - Post</title>
+	<title>{post.title}</title>
 </svelte:head>
 
 <main class="post">
