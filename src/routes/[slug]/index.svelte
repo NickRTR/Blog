@@ -42,6 +42,11 @@
 	{#if post.title}
 		<header>
 			<h1>{post.title}</h1>
+			<div class="categories">
+				{#each post.categories as category}
+					<p>#{category}</p>
+				{/each}
+			</div>
 			<div class="info">
 				<div class="time">
 					<p>
@@ -115,11 +120,6 @@
 		border-radius: 0.1rem;
 	}
 
-	header p {
-		margin: 0;
-		opacity: 0.7;
-	}
-
 	header hr {
 		margin-bottom: 3rem;
 	}
@@ -128,10 +128,25 @@
 		margin-top: 3rem;
 	}
 
+	header .categories {
+		display: flex;
+	}
+
+	header .categories p {
+		margin-top: -1.25rem;
+		margin-right: 0.5rem;
+		color: var(--yellow);
+	}
+
 	header .info {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+	}
+
+	header .info p {
+		margin: 0;
+		color: var(--grey);
 	}
 
 	.comment {

@@ -32,6 +32,7 @@ export const postQuery = gql`
 			body {
 				html
 			}
+			categories
 			documentInStages {
 				blogComments {
 					author
