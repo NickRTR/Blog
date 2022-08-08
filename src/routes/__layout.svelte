@@ -17,9 +17,6 @@
 		max-width: 700px;
 		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 		padding-inline: 0.5rem;
-	}
-
-	:global(body) {
 		background-color: var(--background);
 		color: var(--color);
 		margin: auto;
@@ -35,7 +32,7 @@
 	}
 
 	:global(*:focus) {
-		outline: 2px solid var(--contrast);
+		outline: 2px solid var(--yellow);
 		border-radius: 0.1rem;
 	}
 

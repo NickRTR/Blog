@@ -151,7 +151,7 @@
 
 	.comment {
 		border: 5px solid var(--yellow);
-		padding: 0 0.5rem;
+		padding: 0.5rem;
 		border-radius: 1rem;
 		margin-bottom: 1rem;
 	}
@@ -199,17 +199,16 @@
 		}
 	}
 
+	button a {
+		color: var(--yellow);
+	}
+
 	:global(.post article h1:hover) {
 		color: var(--yellow);
 		text-decoration: underline;
 	}
 
-	:global(.post article h2:hover) {
-		color: var(--yellow);
-		text-decoration: underline;
-	}
-
-	:global(.post article h3:hover) {
+	:global(.post article h2:hover, .post article h3:hover) {
 		color: var(--yellow);
 		text-decoration: underline;
 	}
@@ -226,10 +225,6 @@
 
 	:global(.post ul) {
 		padding-left: 1.3rem;
-	}
-
-	:global(.post strong) {
-		font-weight: 800;
 	}
 
 	:global(.post img) {

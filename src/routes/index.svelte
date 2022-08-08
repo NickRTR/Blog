@@ -22,13 +22,13 @@
 	<title>Nick Reutlinger - Blog</title>
 </svelte:head>
 
-<body>
+<main>
 	<h1>Nick Reutlinger - <span>Blog</span></h1>
 
 	<About />
 
 	<PostsGrid {posts} />
-</body>
+</main>
 
 <style>
 	span {
