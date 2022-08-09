@@ -72,7 +72,7 @@
 
 	:global(button) {
 		background-color: var(--background);
-		color: var(--yellow);
+		color: var(--contrast);
 		border-radius: 1rem;
 		font-size: 1.2rem;
 		font-weight: bold;
@@ -82,5 +82,6 @@
 
 	:global(button:hover) {
 		text-decoration: underline;
+		color: var(--yellow);
 	}
 </style>

@@ -80,22 +80,13 @@
 					{#if commentSubmitMessage !== ""}
 						<p>{commentSubmitMessage}</p>
 					{/if}
-					<input class="border" type="text" placeholder="Your Name" bind:value={commentAuthor} />
-					<textarea
-						class="border"
-						placeholder="Your Comment"
-						bind:value={commentBody}
-						maxlength={500}
-					/>
+					<input type="text" placeholder="Your Name" bind:value={commentAuthor} />
+					<textarea placeholder="Your Comment" bind:value={commentBody} maxlength={500} />
 				</form>
-				<button class="border" type="submit" on:click|preventDefault={postComment}>Comment</button>
-				<button class="border" type="button"
-					><a
-						href="/"
-						rel="canonical"
-						class="noYellowUnderline"
-						sveltekit:prefetch
-						title="back to blog posts">Continue reading...</a
+				<button type="submit" on:click|preventDefault={postComment}>Comment</button>
+				<button type="button"
+					><a href="/" rel="canonical" sveltekit:prefetch title="back to blog posts"
+						>Continue reading...</a
 					></button
 				>
 			</div>
@@ -164,10 +155,6 @@
 		margin: 0;
 	}
 
-	.links a {
-		text-decoration: none;
-	}
-
 	form {
 		display: flex;
 		flex-direction: column;
@@ -199,8 +186,8 @@
 		}
 	}
 
-	button a {
-		color: var(--yellow);
+	.links button {
+		border: none;
 	}
 
 	:global(.post article h1:hover) {
@@ -232,10 +219,10 @@
 		height: unset;
 	}
 
-	@media only screen and (max-width: 450px) {
+	/* @media only screen and (max-width: 450px) {
 		.links {
 			display: grid;
 			gap: 1rem;
 		}
-	}
+	} */
 </style>
