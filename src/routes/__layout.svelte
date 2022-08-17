@@ -22,6 +22,10 @@
 		margin: auto;
 	}
 
+	:global(*) {
+		scroll-behavior: smooth;
+	}
+
 	:global(:root) {
 		--background: #04151f;
 		--color: #c8c8c8;

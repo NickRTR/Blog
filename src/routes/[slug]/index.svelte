@@ -72,8 +72,6 @@
 			<hr />
 		</header>
 
-		<a href="#content">tewst</a>
-
 		<article>{@html post.body.html}</article>
 
 		<footer>
