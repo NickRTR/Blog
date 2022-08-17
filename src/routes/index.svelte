@@ -12,8 +12,8 @@
 </script>
 
 <script>
-	import About from "../lib/components/About.svelte";
-	import PostsGrid from "../lib/components/PostsGrid.svelte";
+	import About from "$lib/components/About.svelte";
+	import PostsGrid from "$lib/components/PostsGrid.svelte";
 
 	export let posts;
 </script>

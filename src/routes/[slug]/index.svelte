@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from "svelte";
+
 	export let post;
 
 	const created = new Date(post.createdAt);
@@ -31,6 +33,17 @@
 		commentBody = "";
 	}
 
+	function addIdsToHeadings() {
+		var tags = document.querySelectorAll("h1, h2, h3");
+		for (var i = 0, h1; (h1 = tags[i]); i++) {
+			h1.id = h1.innerHTML.toLowerCase().replace(" ", "-");
+		}
+	}
+
+	onMount(() => {
+		addIdsToHeadings(post.body.html);
+	});
+
 	const createDate = (time) => new Date(time);
 </script>
 
@@ -58,6 +71,8 @@
 			</div>
 			<hr />
 		</header>
+
+		<a href="#content">tewst</a>
 
 		<article>{@html post.body.html}</article>
 
