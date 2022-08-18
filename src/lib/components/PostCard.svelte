@@ -60,5 +60,6 @@
 
 	.description {
 		color: var(--grey);
+		filter: brightness(1.6);
 	}
 </style>
