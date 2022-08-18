@@ -1,7 +1,8 @@
 <script>
 	import { onMount } from "svelte";
 
-	export let post;
+	export let data;
+	const post = data.post;
 
 	const created = new Date(post.createdAt);
 	const edited = new Date(post.updatedAt);

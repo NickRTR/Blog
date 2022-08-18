@@ -13,7 +13,6 @@
 	body {
 		/* remove borders at top and bottom of mobile screens */
 		border: 0.1px solid transparent;
-
 		max-width: 700px;
 		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 		padding-inline: 0.5rem;

@@ -1,21 +1,8 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const res = await fetch("/api/posts");
-		const data = await res.json();
-
-		return {
-			props: {
-				posts: data.posts
-			}
-		};
-	}
-</script>
-
 <script>
 	import About from "$lib/components/About.svelte";
 	import PostsGrid from "$lib/components/PostsGrid.svelte";
 
-	export let posts;
+	export let data;
 </script>
 
 <svelte:head>
@@ -27,7 +14,7 @@
 
 	<About />
 
-	<PostsGrid {posts} />
+	<PostsGrid posts={data.posts} />
 </main>
 
 <style>

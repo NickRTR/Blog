@@ -1,3 +1,4 @@
+import { json } from "@sveltejs/kit";
 import { searchQuery } from "$lib/queries";
 import hygraph from "$lib/hygraph";
 
@@ -16,10 +17,7 @@ export async function GET({ params }) {
 		}
 	});
 
-	return {
-		status: 200,
-		body: {
-			posts: searchedPosts
-		}
-	};
+	return json({
+		posts: searchedPosts
+	});
 }
