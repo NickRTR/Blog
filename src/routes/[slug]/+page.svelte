@@ -4,6 +4,8 @@
 	export let data;
 	const post = data.post;
 
+	console.log(post);
+
 	const created = new Date(post.createdAt);
 	const edited = new Date(post.updatedAt);
 
@@ -231,6 +233,12 @@
 	:global(.post img) {
 		width: unset;
 		height: unset;
+	}
+
+	:global(.post code) {
+		background-color: var(--color);
+		color: var(--background);
+		padding-block: 0.2rem;
 	}
 
 	/* @media only screen and (max-width: 450px) {
