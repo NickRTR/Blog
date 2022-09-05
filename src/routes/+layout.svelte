@@ -87,4 +87,21 @@
 		text-decoration: underline;
 		color: var(--yellow);
 	}
+
+	/* scroll bar */
+	::-webkit-scrollbar {
+		width: 10px;
+		border-radius: 0;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		border: 5px solid var(--textLight);
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: var(--yellow);
+		border-radius: 1rem;
+	}
 </style>
