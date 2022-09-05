@@ -25,8 +25,8 @@
 
 <nav>
 	<section>
-		<a href="/" title="Home" sveltekit:prefetch>Home</a>
-		<a href="/categories" title="Categories" sveltekit:prefetch>Categories</a>
+		<a href="/" title="Home" data-sveltekit-prefetch>Home</a>
+		<a href="/categories" title="Categories" data-sveltekit-prefetch>Categories</a>
 	</section>
 	<aside>
 		<div class="search">

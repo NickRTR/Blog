@@ -99,7 +99,7 @@
 				</form>
 				<button type="submit" on:click|preventDefault={postComment}>Comment</button>
 				<button type="button"
-					><a href="/" rel="canonical" sveltekit:prefetch title="back to blog posts"
+					><a href="/" rel="canonical" data-sveltekit-prefetch title="back to blog posts"
 						>Continue reading...</a
 					></button
 				>

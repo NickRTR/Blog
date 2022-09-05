@@ -3,7 +3,7 @@
 </script>
 
 <section>
-	<a href="/{post.slug}" sveltekit:prefetch>
+	<a href="/{post.slug}" data-sveltekit-prefetch>
 		<div class="post">
 			<h1>{post.title}</h1>
 			{#if post.description}
