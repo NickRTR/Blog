@@ -1,6 +1,9 @@
 <script>
 	import Search from "./Search.svelte";
 
+	import { theme } from "$lib/stores";
+	import { page } from "$app/stores";
+
 	let searchElement;
 	let search = "";
 
@@ -29,19 +32,21 @@
 		<a href="/categories" title="Categories" data-sveltekit-prefetch>Categories</a>
 	</section>
 	<aside>
-		<div class="search">
-			<input
-				type="text"
-				placeholder="type / to search posts"
-				bind:this={searchElement}
-				bind:value={search}
-			/>
-			{#if search !== ""}
-				<Search bind:search />
-			{/if}
-		</div>
+		{#if $page.data.desktop}
+			<div class="search">
+				<input
+					type="text"
+					placeholder="type / to search posts"
+					bind:this={searchElement}
+					bind:value={search}
+				/>
+				{#if search !== ""}
+					<Search bind:search />
+				{/if}
+			</div>
+		{/if}
 		<a href="https://github.com/NickRTR/blog" title="GitHub">
-			<img src="/GitHub-light.png" alt="GitHub" />
+			<img src="/GitHub-{$theme}.png" alt="GitHub" />
 		</a>
 	</aside>
 </nav>
@@ -79,13 +84,7 @@
 	img {
 		width: 2rem;
 		height: 2rem;
-		filter: brightness(0.9);
-		transition: filter 0.1s ease-in-out;
 		margin: 0;
 		padding: 0;
-	}
-
-	a:hover img {
-		filter: brightness(1);
 	}
 </style>

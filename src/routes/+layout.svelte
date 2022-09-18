@@ -1,6 +1,13 @@
 <script>
-	import Nav from "../lib/components/Nav.svelte";
-	import Footer from "../lib/components/Footer.svelte";
+	import Nav from "$lib/components/Nav.svelte";
+	import Footer from "$lib/components/Footer.svelte";
+
+	import { theme } from "$lib/stores";
+	import { onMount } from "svelte";
+
+	onMount(() => {
+		window.document.body.classList.toggle($theme);
+	});
 </script>
 
 <body>
@@ -26,12 +33,20 @@
 	}
 
 	:global(:root) {
+		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
+		--yellow: #ffc600;
+
 		--background: #04151f;
 		--color: #c8c8c8;
 		--contrast: white;
 		--grey: grey;
-		--yellow: #ffc600;
-		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
+	}
+
+	:global(body.light) {
+		--color: #04151f;
+		--contrast: black;
+		--background: white;
+		--grey: #3a3a3a;
 	}
 
 	:global(*:focus) {
@@ -41,7 +56,7 @@
 
 	:global(*::selection) {
 		background: var(--yellow);
-		color: var(--background);
+		color: var(--contrast);
 	}
 
 	:global(a) {

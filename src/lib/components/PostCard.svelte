@@ -59,7 +59,6 @@
 	}
 
 	.description {
-		color: var(--grey);
-		filter: brightness(1.6);
+		color: var(--color);
 	}
 </style>
