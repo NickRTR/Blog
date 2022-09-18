@@ -153,7 +153,8 @@
 
 	header .info p {
 		margin: 0;
-		color: var(--grey);
+		color: var(--color);
+		filter: brightness(0.6);
 	}
 
 	.comment {

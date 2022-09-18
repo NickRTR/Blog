@@ -12,8 +12,8 @@
 <style>
 	hr {
 		margin-top: 2rem;
+		background-color: var(--color);
 		height: 1px;
-		background-color: var(--grey);
 		border: none;
 	}
 

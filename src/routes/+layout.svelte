@@ -7,10 +7,9 @@
 	$: color = $theme === "dark" ? "#c8c8c8" : "#04151f";
 	$: background = $theme === "dark" ? "#04151f" : "white";
 	$: contrast = $theme === "dark" ? "white" : "black";
-	$: grey = $theme === "dark" ? "grey" : "#3a3a3a";
 </script>
 
-<body style="--color: {color}; --background: {background}; --contrast: {contrast}; --grey: {grey}">
+<body style="--color: {color}; --background: {background}; --contrast: {contrast};">
 	<main>
 		<Nav />
 		<slot />
