@@ -27,6 +27,7 @@
 		background-color: var(--background);
 		color: var(--color);
 		margin: 0;
+		min-height: 100vh;
 	}
 
 	main {
