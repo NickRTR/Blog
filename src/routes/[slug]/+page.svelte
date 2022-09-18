@@ -206,14 +206,10 @@
 		border: none;
 	}
 
-	:global(.post article h1:hover) {
+	:global(.post article h1:hover, .post article h2:hover, .post article h3:hover) {
 		color: var(--yellow);
 		text-decoration: underline;
-	}
-
-	:global(.post article h2:hover, .post article h3:hover) {
-		color: var(--yellow);
-		text-decoration: underline;
+		cursor: default;
 	}
 
 	:global(.post a) {
