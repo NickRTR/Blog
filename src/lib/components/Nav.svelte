@@ -1,7 +1,7 @@
 <script>
 	import Search from "./Search.svelte";
 
-	import { theme } from "$lib/stores";
+	import { theme, toggleTheme } from "$lib/stores";
 	import { page } from "$app/stores";
 
 	let searchElement;
@@ -45,6 +45,21 @@
 				{/if}
 			</div>
 		{/if}
+		<div class="toggleAppeareance button" title="light/dark mode">
+			<input
+				type="checkbox"
+				name="toggleAppeareance"
+				id="toggleAppeareance"
+				on:change={toggleTheme}
+			/>
+			<label for="toggleAppeareance">
+				{#if $theme === "light"}
+					<p>🌞</p>
+				{:else if $theme === "dark"}
+					<p>🌙</p>
+				{/if}
+			</label>
+		</div>
 		<a href="https://github.com/NickRTR/blog" title="GitHub">
 			<img src="/GitHub-{$theme}.png" alt="GitHub" />
 		</a>
@@ -76,7 +91,6 @@
 	}
 
 	input {
-		margin-right: 0.5rem;
 		padding: 0.25rem;
 		width: 126px;
 	}
@@ -86,5 +100,19 @@
 		height: 2rem;
 		margin: 0;
 		padding: 0;
+	}
+
+	/* Theme button */
+
+	.button input {
+		display: none;
+	}
+
+	.button p {
+		margin: 0 0.4rem;
+		border-radius: 100%;
+		font-size: 1.6rem;
+		user-select: none;
+		cursor: pointer;
 	}
 </style>
