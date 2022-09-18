@@ -4,8 +4,6 @@
 	export let data;
 	const post = data.post;
 
-	console.log(post);
-
 	const created = new Date(post.createdAt);
 	const edited = new Date(post.updatedAt);
 

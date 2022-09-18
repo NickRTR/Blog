@@ -4,7 +4,7 @@
 
 	import { theme } from "$lib/stores";
 
-	$: color = $theme === "dark" ? "#c8c8c8" : "#04151f";
+	$: color = $theme === "dark" ? "#c8c8c8" : "#4d4d4d";
 	$: background = $theme === "dark" ? "#04151f" : "white";
 	$: contrast = $theme === "dark" ? "white" : "black";
 </script>
