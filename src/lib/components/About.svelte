@@ -1,8 +1,9 @@
 <article>
 	<p>
-		I'm a self-taught software engineer at the age of 16, located in Germany. For the most part, I'm
-		developing Web Apps with SvelteKit and Javascript. Additionally, I'm interested in anything that
-		has to do with tech.
+		I'm a self-taught software engineer at the age of 16, located in <strong>Germany</strong>.<br />
+		I develop Web Applications with <strong>SvelteKit</strong> and
+		<strong>Javascript</strong> as well as <strong>Go</strong>(lang) applications. Additionally, I'm
+		interested in anything that has to do with <strong>tech</strong>.
 	</p>
 </article>
 
