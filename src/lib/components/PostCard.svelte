@@ -39,7 +39,7 @@
 	}
 
 	a {
-		outline: none;
+		text-decoration: none;
 	}
 
 	a:focus h1 {

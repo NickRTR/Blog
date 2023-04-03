@@ -23,6 +23,10 @@
 		line-height: 2rem;
 	}
 
+	a {
+		text-decoration: none;
+	}
+
 	p {
 		margin-top: 1rem;
 	}

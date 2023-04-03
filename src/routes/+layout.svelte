@@ -4,7 +4,7 @@
 
 	import { theme } from "$lib/stores";
 
-	$: color = $theme === "dark" ? "#c8c8c8" : "#4d4d4d";
+	$: color = $theme === "dark" ? "#e6e6e6" : "#2b2b2b";
 	$: background = $theme === "dark" ? "#04151f" : "white";
 	$: contrast = $theme === "dark" ? "white" : "black";
 </script>
@@ -50,15 +50,15 @@
 
 	:global(*::selection) {
 		background: var(--yellow);
-		color: var(--contrast);
+		color: black;
 	}
 
 	:global(a) {
+		outline: none !important;
 		color: var(--contrast);
-		text-decoration: none;
 	}
 
-	:global(a:hover) {
+	:global(a:hover, a:focus) {
 		text-decoration: underline;
 		color: var(--yellow);
 	}
