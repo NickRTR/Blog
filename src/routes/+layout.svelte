@@ -43,11 +43,6 @@
 		scroll-behavior: smooth;
 	}
 
-	:global(*:focus) {
-		outline: 2px solid var(--yellow);
-		border-radius: 0.1rem;
-	}
-
 	:global(*::selection) {
 		background: var(--yellow);
 		color: black;
