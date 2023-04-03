@@ -72,14 +72,16 @@
 	}
 
 	:global(textarea, input) {
+		outline: none !important;
 		background-color: var(--background);
 		color: var(--color);
 		border: 2px solid var(--color);
 		border-radius: 0.5rem;
 	}
 
-	:global(textarea:hover, input:hover) {
+	:global(textarea:hover, input:hover, textarea:focus, input:focus) {
 		border-color: var(--yellow);
+		border-radius: 0.5rem;
 	}
 
 	:global(button) {
