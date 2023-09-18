@@ -4,12 +4,11 @@
 
 	import { theme } from "$lib/stores";
 
-	$: color = $theme === "dark" ? "#e6e6e6" : "#2b2b2b";
+	$: color = $theme === "dark" ? "white" : "black";
 	$: background = $theme === "dark" ? "#04151f" : "white";
-	$: contrast = $theme === "dark" ? "white" : "black";
 </script>
 
-<body style="--color: {color}; --background: {background}; --contrast: {contrast};">
+<body style="--color: {color}; --background: {background};">
 	<main>
 		<Nav />
 		<slot />
@@ -50,7 +49,7 @@
 
 	:global(a) {
 		outline: none !important;
-		color: var(--contrast);
+		color: var(--color);
 	}
 
 	:global(a:hover, a:focus) {
@@ -59,7 +58,7 @@
 	}
 
 	:global(h1, h2, h3) {
-		color: var(--contrast);
+		color: var(--color);
 	}
 
 	:global(img, iframe, button) {
@@ -81,7 +80,7 @@
 
 	:global(button) {
 		background-color: var(--background);
-		color: var(--contrast);
+		color: var(--color);
 		border-radius: 1rem;
 		font-size: 1.2rem;
 		font-weight: bold;
