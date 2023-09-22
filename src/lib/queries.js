@@ -2,7 +2,7 @@ import { gql } from "graphql-request";
 
 export const postsQuery = gql`
 	query posts {
-		posts {
+		posts(stage: PUBLISHED) {
 			title
 			description
 			createdAt
@@ -14,7 +14,7 @@ export const postsQuery = gql`
 
 export const searchQuery = gql`
 	query search {
-		posts {
+		posts(stage: PUBLISHED) {
 			title
 			slug
 		}
