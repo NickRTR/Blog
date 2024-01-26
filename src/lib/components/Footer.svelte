@@ -6,7 +6,7 @@
 		<a href="https://www.nickreutlinger.de" title="Portfolio">Portfolio</a>
 		<a href="https://www.nickreutlinger.de/contact" title="Contact">Contact</a>
 	</nav>
-	<p>©2023 Nick Reutlinger 🚀</p>
+	<p>©{new Date().getFullYear()} Nick Reutlinger 🚀</p>
 </footer>
 
 <style>
